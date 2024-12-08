@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      transition: background-color 0.5s;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    /* Random background color generator */
+    @keyframes randomBackground {
+      0% { background-color: #FF6347; }
+      25% { background-color: #20B2AA; }
+      50% { background-color: #FFD700; }
+      75% { background-color: #8A2BE2; }
+      100% { background-color: #DC143C; }
+    }
+
+    body {
+      animation: randomBackground 5s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Random Page</h1>
+    <button onclick="alert('Random Page Clicked!')">Click Me</button>
+  </div>
+</body>
+</html>
